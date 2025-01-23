@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
+   
 }
 .hero {
     width: 100%;
@@ -13,8 +13,19 @@
     background-size: cover;
     padding: 10px 10%;
     overflow: hidden;
-}
+    color:#fff
 
+}
+.brand {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: #fff;
+    background-image:linear-gradient(45deg, #0a020aaf, #4c30d7);
+    font-size: 18px;
+    border-radius: 30px;
+}
+    
 nav {
     padding: 10px 0;
     display: flex;
@@ -52,4 +63,58 @@ nav ul li a{
     font-size: 14px;
     border-radius: 30px;
     border-top-right-radius: 0;
+    transition: 0.5s;
+}
+.content {
+    margin-top: 10%;
+    max-width: 600px;
+    }
+.content h1 {
+    font-size: 70px;    
+}
+.content p {
+    margin: 10px 0 30px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: #fff;
+    background-image:linear-gradient(45deg, #d548dfaf, #4c30d7);
+    font-size: 18px;
+    border-radius: 30px;
+    animation-delay: 0.5s;
+}
+.content .btn {
+    padding:15px;
+    font-size: 16px;
+    animation-delay: 1s;
+}
+.btn:hover {
+    border-top-right-radius: 30px;
+}
+.feature-img{
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+}
+.feature-img.anim {
+    animation-delay: 1.5s;
+    
+}
+
+.anim {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup {
+    100%{
+        opacity: 1;
+        transform: translateY(30px);
+    }
+}
+.footer {
+    background-image:linear-gradient(45deg, #315AA4,#4C30D7, #4C2D6E, #24184F);
+    color: #fff;
+    font-size: 15px;
 }
